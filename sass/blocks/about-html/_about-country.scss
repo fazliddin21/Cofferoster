@@ -1,0 +1,118 @@
+.county {
+    padding-bottom: 170px;
+  }
+  
+  .country__inner {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1045px;
+  }
+  
+  .country__title {
+    margin: 0;
+    padding: 0;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 32px;
+    color: #83888f;
+  }
+  
+  .country__list {
+    display: flex;
+    justify-content: space-between;
+    margin: 72px 0 0;
+    padding: 0;
+    list-style-type: none;
+  }
+  
+  .country__name {
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 36px;
+    color: #333d4b;
+  }
+  
+  .country__address-list {
+    margin: 24px 0 0;
+    padding: 0;
+    list-style-type: none;
+  }
+  
+  .country__subitem,
+  .country__subitem a {
+    font-family: "Barlow";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #333d4b;
+    text-decoration: none;
+  }
+  
+  .country__item::before {
+    content: "";
+    display: block;
+    margin-bottom: 50px;
+    width: 41px;
+    height: 49px;
+    background-image: url("../images/card1.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .canada::before {
+    width: 52px;
+    height: 50px;
+    background-image: url("../images/card2.svg");
+  }
+  
+  .australia::before {
+    width: 49px;
+    height: 44px;
+    background-image: url("../images/card3.svg");
+  }
+  
+  //************//
+  //***TABLET***//
+  @media only screen and (max-width: 769px) {
+    .country__inner {
+      margin: 0 auto;
+      max-width: 668px;
+    }
+  
+    .country__title {
+      line-height: 36px;
+    }
+  }
+  
+  //************//
+  //***MOBILE***//
+  @media only screen and (max-width: 576px) {
+    .county {
+      padding-top: 120px;
+    }
+  
+    .country__title {
+      text-align: center;
+    }
+  
+    .country__list {
+      align-items: center;
+      flex-direction: column;
+  
+    }
+  
+    .country__item {
+      margin-top: 72px;
+      max-width: 327px;
+      text-align: center;
+  
+      &::before {
+        margin: 0 auto 50px;
+      }
+    }
+  
+    .country__name {
+      margin-bottom: 22px;
+    }
+  }
